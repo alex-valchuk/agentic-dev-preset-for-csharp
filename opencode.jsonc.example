@@ -1,0 +1,21 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": [
+    ".agentic-preset/AGENTS.md",
+    ".agentic-preset/instructions/workflow.md",
+    ".agentic-preset/instructions/powershell.md",
+    ".agentic-preset/instructions/solutions.md",
+    ".agentic-preset/instructions/repository-pattern.md",
+    ".agentic-preset/instructions/localization.md",
+
+    // Optional UI modules - remove these two lines for non-UI repositories.
+    ".agentic-preset/instructions/ui/xaml-formatting.md",
+    ".agentic-preset/instructions/ui/prism-navigation.md",
+
+    // Project-specific rules always come last so they win in model attention.
+    ".opencode/instructions/*.md"
+  ],
+  "skills": [
+    ".agentic-preset/skills"
+  ]
+}
